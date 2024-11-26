@@ -1,6 +1,6 @@
 
 # PIQ Energy Take Home 
-This is a development only application that allows users to run and view results of an energy study. 
+This is a development only application that allows users to run and view results of an energy study. Data is not being persisted on the back end past the existing session.
 
 ## Running Locallys
 
