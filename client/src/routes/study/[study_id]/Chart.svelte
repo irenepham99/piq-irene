@@ -18,7 +18,6 @@
 
     let chartCanvas : HTMLCanvasElement; // Reference to the canvas element
     let chartInstance : ChartJS; // Store the Chart.js instance
-    export let scenarioNum : Number;
     export let results : Datapoint[];
 
     // Chart configuration
