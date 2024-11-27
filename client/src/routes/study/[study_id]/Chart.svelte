@@ -21,9 +21,6 @@
     export let scenarioNum : Number;
     export let results : Datapoint[];
 
-    console.log(scenarioNum, "SCENARIO NUM")
-    console.log(results,  "RESULTS IN CHART")
-
     // Chart configuration
     const config = {
         type: "line",

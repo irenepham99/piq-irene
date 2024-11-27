@@ -21,10 +21,8 @@
                 throw new Error(`Error running study ${response.status}`);
             }
             let responseData = await response.json(); 
-			console.log(responseData, "POST REQUEST DATA")
 
             if (responseData && responseData.id) {
-                console.log("ID", responseData.id)
                 goto(`/study/${responseData.id}`);
             } else {
                 throw new Error("Invalid response: 'id' not found");
@@ -34,7 +32,6 @@
 			if (err && err.message) {
                 error += `: ${err.message}`;
             }
-            console.log(err)
         } finally { 
 			loading = false;
 		}

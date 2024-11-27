@@ -46,7 +46,6 @@ def read_item(item_id: int, q: Union[str, None] = None):
 def run_study(study : Study):
     global current_id
 
-    #TODO cehck for failures here, is it async? 
     simulation_results = run_simulation(
         num_scenarios=study.num_scenarios,
         scenario_type=study.scenario_type,

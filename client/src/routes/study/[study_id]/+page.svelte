@@ -26,8 +26,6 @@
             }
             let responseData = await response.json(); 
 
-            console.log(responseData, "RESPONSE DATA")
-
             results = responseData.results;
             startTime = new Date(responseData.start_time);
             endTime = new Date(responseData.end_time);
@@ -37,7 +35,6 @@
             if (err && err.message) {
                 error += `: ${err.message}`;
             }
-            console.log(err)
         } finally { 
             loading = false; 
         }
