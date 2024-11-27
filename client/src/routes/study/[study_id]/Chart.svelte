@@ -52,9 +52,10 @@
                     type: "time",
                     time: {
                         unit: "hour",
-                        tooltipFormat: "HH:mm", // Military time for tooltips
+                        tooltipFormat: "MM/dd    HH:00", 
                         displayFormats: {
-                            hour: "HH", // Military time for x-axis ticks
+                            hour: "MM/dd    HH:00", 
+                 
                         },
                     },
                     title: {
