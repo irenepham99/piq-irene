@@ -60,7 +60,7 @@
         <Tabs>
             {#each Array(2).fill(0).map((_, i) => i) as scenarioNum}
                 <TabItem open={scenarioNum == 0 ? true : false} title={`Scenario ${scenarioNum}`}>
-                    <Chart {scenarioNum} results={results.filter(datapoint => datapoint.scenario == scenarioNum)} />
+                    <Chart results={results.filter(datapoint => datapoint.scenario == scenarioNum)} />
                 </TabItem>
             {/each}
         </Tabs>
